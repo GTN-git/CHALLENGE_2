@@ -67,3 +67,23 @@ header h1 {
     border-radius: 15px;
     text-shadow: none;
   }
+
+  /* Header / NAVBAR STYLES END*/
+
+  /* Hero Style Start */
+  .hero {
+    position: relative;
+    background-image: url('../images/IMG_1782.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .subtitle {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   float: right;
+  }
