@@ -83,11 +83,27 @@ header h1 {
   }
 
   .subtitle {
-    position: absolute;
+  position: absolute;
   float: right;
   }
 
   /* Hero Style End*/
+
+/* Main Styles Start */
+/* this is the section identifier in the main sections */
+.section-title {
+  color: var(--secondary-color);
+  width: 200px;
+  margin: 20px 20px 0px 10px;
+}
+
+ /* this adds the black like separating the divs*/
+ .flex-row {
+  border-right: black 2px solid;
+  text-align: right;
+}
+
+/* Main Styles End */
 
   /* About Me Style Start*/
 
@@ -95,7 +111,7 @@ header h1 {
   #about_me { 
     display: flex;
     align-content: flex-end;
-    /* border: 2px red solid; */
+    margin-top: 30px;
   }
   /* this is for the paragraph formatting */
   #about_me p {
@@ -103,19 +119,7 @@ header h1 {
     margin: 10px 20px 0px 30px;
     color: black;
   }
-/* this is the section title for the left div */
-  .section-title {
-    color: var(--secondary-color);
-    width: 200px;
-    margin: 20px 20px 0px 10px;
-  
-  }
 
-  /* this adds the black like separating the About me */
-  .flex-row {
-    border-right: black 2px solid;
-    text-align: right;
-  }
    /* About Me Style End*/
 
    /* Work Section Start*/
@@ -130,22 +134,30 @@ header h1 {
   justify-content: space-between;
   border-color: var(--secondary-color);
 } 
-
+/* Work section ends */
  
 /* Contact Me Section */
 #contact_me {
   display: flex;
   align-content: flex-end;
   margin-top: 30px;
-  width: 80%;
 }
 
-#contact_links {
-  display: flex;
+#contact_me h2 {
+  margin-bottom: 30px;
+}
+
+.contact_links {
+  width: 80%;
+  margin-left: 5px;
+  margin-top: 30px; 
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0px 10px 0px 30px;
-  width: 50%;
-  font-size: 20px;
 }
 
+.contact_links a {
+  padding: 30px;
+  width: 100%;
+}
+
+/* contact me section ends */
