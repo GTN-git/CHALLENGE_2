@@ -133,7 +133,128 @@ header h1 {
   display: flex;
   justify-content: space-between;
   border-color: var(--secondary-color);
+  width: 60%;
+  flex-wrap: wrap;
+  color: black;
 } 
+
+#big {/* make each one 45%, putting 10% between each element on the page */
+  margin: 10px 10px 10px 30px;
+  width: 100%;
+  /* rounded corners */
+  border-radius: 14px;
+  border: 4px solid var(--secondary-color);
+  background-color: #393b4f;
+  font-size: 22px;
+  font-weight: bold;
+  flex-grow: 4;
+
+  /* put space between each one vertically */
+  margin-bottom: 15px;
+
+  /* for files in local images folder, use url('../images/file-name.jpg') */
+  background-image: url("../images/hero-bg.jpeg");
+
+  /* tell background to fit box no matter what */
+  background-size: cover;
+
+  /* crop it at the center */
+  background-position: center;
+
+  /* padding top and bottom 20px, 0 for left/right */
+  padding: 20px 0;
+
+  /* set minimum heigh value so there's room */
+  min-height: 250px;
+
+  /* rather than use position...use flexbox and create column instead of row */
+  display: flex;
+  flex-direction: column;
+}
+
+#big:hover {
+  filter: blur(4px);
+}
+
+#robot {
+ 
+  /* for files in local images folder, use url('../images/file-name.jpg') */
+  margin: 10px 10px 10px 30px;
+  width: 45%;
+  /* rounded corners */
+  flex-grow: 2;
+  border-radius: 14px;
+  border: 4px solid var(--secondary-color);
+  background-color: #393b4f;
+  font-size: 22px;
+  font-weight: bold;
+
+  /* put space between each one vertically */
+  margin-bottom: 15px;
+
+  /* for files in local images folder, use url('../images/file-name.jpg') */
+  background-image: url("../images/Robots.jpeg");
+  background-size: cover;
+
+
+  /* crop it at the center */
+  background-position: center;
+
+  /* padding top and bottom 20px, 0 for left/right */
+  padding: 20px 0;
+
+  /* set minimum heigh value so there's room */
+  min-height: 250px;
+
+  /* rather than use position...use flexbox and create column instead of row */
+  display: flex;
+  flex-direction: column;
+}
+
+#robot:hover{
+  filter: blur(4px)
+}
+
+#small {
+  /* make each one 45%, putting 10% between each element on the page */
+  margin: 10px 10px 10px 30px;
+  width: 45%;
+  /* rounded corners */
+  flex-grow: 2;
+  border-radius: 14px;
+  border: 4px solid var(--secondary-color);
+  background-color: #393b4f;
+  font-size: 22px;
+  font-weight: bold;
+
+  /* put space between each one vertically */
+  margin-bottom: 15px;
+
+  /* for files in local images folder, use url('../images/file-name.jpg') */
+  background-image: url("../images/coming_soon.jpeg");
+
+  /* tell background to fit box no matter what */
+  background-size: cover;
+
+  /* crop it at the center */
+  background-position: center;
+
+  /* padding top and bottom 20px, 0 for left/right */
+  padding: 20px 0;
+
+  /* set minimum heigh value so there's room */
+  min-height: 250px;
+
+  /* rather than use position...use flexbox and create column instead of row */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#small:hover {
+  filter: blur(4px);
+}
 /* Work section ends */
  
 /* Contact Me Section */
