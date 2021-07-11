@@ -72,6 +72,7 @@ header h1 {
 
   /* Hero Style Start */
   .hero {
+    display: flex;
     position: relative;
     background-image: url('../images/IMG_1782.jpg');
     background-size: cover;
@@ -82,8 +83,69 @@ header h1 {
   }
 
   .subtitle {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   float: right;
+    position: absolute;
+  float: right;
   }
+
+  /* Hero Style End*/
+
+  /* About Me Style Start*/
+
+  /* flex the 2 divs to be side by side */
+  #about_me { 
+    display: flex;
+    align-content: flex-end;
+    /* border: 2px red solid; */
+  }
+  /* this is for the paragraph formatting */
+  #about_me p {
+    width: 80%;
+    margin: 10px 20px 0px 30px;
+    color: black;
+  }
+/* this is the section title for the left div */
+  .section-title {
+    color: var(--secondary-color);
+    width: 200px;
+    margin: 20px 20px 0px 10px;
+  
+  }
+
+  /* this adds the black like separating the About me */
+  .flex-row {
+    border-right: black 2px solid;
+    text-align: right;
+  }
+   /* About Me Style End*/
+
+   /* Work Section Start*/
+
+#work {
+  display: flex;
+  align-content: flex-end;
+  margin-top: 30px;
+}
+.work_examples{
+  display: flex;
+  justify-content: space-between;
+  border-color: var(--secondary-color);
+} 
+
+ 
+/* Contact Me Section */
+#contact_me {
+  display: flex;
+  align-content: flex-end;
+  margin-top: 30px;
+  width: 80%;
+}
+
+#contact_links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 10px 0px 30px;
+  width: 50%;
+  font-size: 20px;
+}
+
